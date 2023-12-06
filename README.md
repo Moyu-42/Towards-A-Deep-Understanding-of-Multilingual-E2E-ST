@@ -1,3 +1,15 @@
+# Towards a Deep Understanding of Multilingual End-to-End Speech Translation
+
+This is the offical source code for EMNLP2023-findings paper "Towards a Deep Understanding of Multilingual End-to-End Speech Translation".
+
+### Requirements and Installation
+
+- [PyTorch](http://pytorch.org/) version = 1.13.0
+- Python version = 3.8.8
+- [Fairseq](https://github.com/facebookresearch/fairseq) version = 0.12.2
+
+Note: This is the pip version we used in our experiments, other version may work well.
+
 ### 0. LASER-mined evaluation datasets
 
 Download Common Voice V13 dataset from [Common Voice](https://commonvoice.mozilla.org/en/datasets) for ar, cy, et, id, ja, lv, mn, sl, sv-SE, ta, tr
@@ -52,5 +64,39 @@ python3 scripts/CoVoST/get_svcca_scores.py
 ```bash
 python3 scripts/CoVoST/ploting/cca_clustermap_plot.py # for Figure 1 and 3
 python3 scripts/CoVoST/ploting/get_cloudmap.py # for Figure 2
+```
+
+### Citation
+
+Please cite as:
+
+```
+@article{sun2023towards,
+  title={Towards a Deep Understanding of Multilingual End-to-End Speech Translation},
+  author={Sun, Haoran and Zhao, Xiaohu and Lei, Yikun and Zhu, Shaolin and Xiong, Deyi},
+  journal={arXiv preprint arXiv:2310.20456},
+  year={2023}
+}
+```
+
+Part of the codes are adopted from:
+
+```
+@article{raghu2017svcca,
+  title={Svcca: Singular vector canonical correlation analysis for deep learning dynamics and interpretability},
+  author={Raghu, Maithra and Gilmer, Justin and Yosinski, Jason and Sohl-Dickstein, Jascha},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+```
+
+```
+@article{chang2022geometry,
+  title={The geometry of multilingual language model representations},
+  author={Chang, Tyler A and Tu, Zhuowen and Bergen, Benjamin K},
+  journal={arXiv preprint arXiv:2205.10964},
+  year={2022}
+}
 ```
 
