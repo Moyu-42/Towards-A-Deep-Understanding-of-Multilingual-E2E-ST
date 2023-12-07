@@ -8,7 +8,7 @@ This is the offical source code for EMNLP2023-findings paper "Towards a Deep Und
 - Python version = 3.8.8
 - [Fairseq](https://github.com/facebookresearch/fairseq) version = 0.12.2
 
-Note: This is the pip version we used in our experiments, other version may work well.
+Note: This is the version we used in our experiment; other versions may also be applicable.
 
 ### 0. LASER-mined evaluation datasets
 
@@ -62,8 +62,8 @@ python3 scripts/CoVoST/get_svcca_scores.py
 ### 3. Ploting
 
 ```bash
-python3 scripts/CoVoST/ploting/cca_clustermap_plot.py # for Figure 1 and 3
-python3 scripts/CoVoST/ploting/get_cloudmap.py # for Figure 2
+python3 scripts/CoVoST/ploting/cca_clustermap_plot.py # for Figure 1 & 4
+python3 scripts/CoVoST/ploting/get_cloudmap.py # for Figure 2 & 3
 ```
 
 ### Citation
